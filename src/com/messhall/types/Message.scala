@@ -3,9 +3,9 @@ package com.messhall.types
 /**
  * Message represents a thread reply or original post. 
 */
-class Message (tid: Int, aid: Int, tb: String, ts: Long, rid: Int = None){
-    val threadId: Int = tid
-    val authorId: Int = aid
+class Message (tid: Long, aid: Long, tb: String, ts: Long = System.currentTimeMillis/1000L, rid: Long = None){
+    val threadId: Long = tid
+    val authorId: Long = aid
     val threadBody: String = tb
     val timestamp: Long = ts
     val replyId = rid

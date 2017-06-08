@@ -3,8 +3,8 @@ package com.messhall.types
 /**
  * Thread represents a thread with the original post ID
  */
-class Thread (tid: Int, ts: Int, oid: Int){
-    val threadId: Int = tid
-    val timestamp: Int = ts
-    val opId: Int = oid
+class Thread (tid: Long, ts: Long = System.currentTimeMillis/1000L, oid: Long){
+    val threadId: Long = tid
+    val timestamp: Long = ts
+    val opId: Long = oid
 }
