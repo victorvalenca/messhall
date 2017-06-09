@@ -21,7 +21,7 @@ object Connector {
 
     try {
         Class.forName(driver)
-        val connection: Connection = DriverManager.getConnection(url, username, password)
+        val connection: Connection = DriverManager.getConnection(url + dbName, username, password)
     } catch {
         case e: Exception => e.printStackTrace
     }
