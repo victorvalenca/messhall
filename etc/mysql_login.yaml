@@ -1,0 +1,6 @@
+# Login information to your MySQL database
+url: "jdbc:mysql://localhost:3306/"
+dbName: "name"
+driver: "com.mysql.jdbc.Driver"
+username: "username"
+password: "hunter2"
